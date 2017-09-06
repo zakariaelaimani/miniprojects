@@ -1,10 +1,6 @@
 import os
 count = 0
 ct = input("What should I count up to? ")
-if os.name == "posix" or "mac": # If you're running linux/macos
-    os.system("clear") # bash etc. uses 'clear' whereas windows uses 'cls'
-elif os.name == "nt": # If you're running windows NT (2000 up)
-    os.system("cls") # cmd uses 'cls' instead of 'clear'
 while True: # Infinite loop
     if int(ct) < int(count): # If the number counted up to is higher than the max
         break # Cancel if above is true
