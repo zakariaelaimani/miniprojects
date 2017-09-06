@@ -7,7 +7,7 @@ try:
     while True:
         guess = input("Guess: ")
         if int(guess) == int(rand):
-            print("Congradulations! You guessed correctly!")
+            print("Congratulations! You guessed correctly!")
             print("[Unless you cheated >_>]")
             break
         elif int(guess) != int(rand):
