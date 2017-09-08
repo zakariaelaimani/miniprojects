@@ -19,6 +19,11 @@ def main():
         suicide()
     else:
         ns()
+def ik():
+    os.system('cls')
+    print("Fine, you can play again!")
+    os.system('pause')
+    main()
 def dead_():
     global dead
     dead = dead + 1
@@ -45,13 +50,25 @@ def dead_():
                 print("How'd you get here?!")
         life()
     elif dead > 100:
-        os.system('cls')
-        print("Jesus, please go away!")
-        os.sytem('pause')
-        os.system('cls')
-        print("Fine, you can play again!")
-        os.system('pause')
-        main()
+            def o1():
+                os.system('cls')
+                a = input('Why are you here... (\'help\' for allowed commands)\n')
+                if str.lower(a) == "i'm lame":
+                    os.system('cls')
+                    print("Yeah I know you are")
+                    os.system('pause')
+                    ik()
+                elif str.lower(a) == "im lame":
+                    os.system('cls')
+                    print("I'll allow your poor punctuation this time!")
+                    os.system('pause')
+                    ik()
+                else:
+                    os.system('cls')
+                    print("commands: 'I'm lame'")
+                    os.system('pause')
+                    o1()
+            o1()
     else:
         dead_()
 main()
