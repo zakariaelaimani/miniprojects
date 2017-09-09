@@ -13,7 +13,7 @@ elif cf == "f-c":
   f = input("Enter Fahrenheit:\n")
   c = (int(f) - 32) * 5 / 9
   os.system('cls')
-  print("Farenheit: " + str(f))
+  print("Fahrenheit: " + str(f))
   print("Celcius: " + str(c))
   os.system('pause')
 else:
