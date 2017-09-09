@@ -1,7 +1,7 @@
 import os
 os.system('cls')
 global cf
-cf = input("Celcius to Fahrenheit or Fahrenheit to Celcius?\n(Select 'c-f' or f-c')\n")
+cf = input("Celcius to Fahrenheit or Fahrenheit to Celcius?\n(Select 'c-f' or 'f-c')\n")
 if cf == "c-f":
   c = input("Enter Celcius:\n")
   f = (int(c) * 9) / 5 + 32
