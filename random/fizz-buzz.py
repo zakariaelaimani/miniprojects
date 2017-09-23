@@ -5,6 +5,8 @@ def main():
     ct = input("What should I count up to? ")
     while True: # Infinite loop
         try:
+            if int(ct) <= 1:
+                print("Don't go below 2")
             if int(ct) < int(count): # If the number counted up to is higher than the max
                 os.system('pause')
                 main() # Restart if above is true

@@ -10,7 +10,10 @@ def fibo(num):
     print(result)
     return
 ut = input("How many numbers should I print? ")
-if int(ut) < 1:
-    print("Do not go under 1!")
-else:
-    fibo(int(ut))
+try:
+    if int(ut) < 1:
+        print("Do not go under 1!")
+    else:
+        fibo(int(ut))
+except ValueError:
+    print("Numbers only")
