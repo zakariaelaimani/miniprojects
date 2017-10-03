@@ -40,3 +40,30 @@ print(rand)
 from random import *
 rand = randint(1, 10)
 print(rand)
+
+print("\n")
+this_is_none = None
+print(this_is_none)
+
+aa = "a"
+ab = "b"
+ac = "c"
+print(aa, ab, ac)
+print("vs")
+print(aa + ab + ac)
+
+print("Hello", end='')
+print("World")
+
+print("", end="\n")
+print("Hello", aa, ab, ac, sep="TEST")
+
+print("\n")
+apple = "apple"
+def applez():
+    print(apple)
+applez()
+print("\n")
+
+sample = "sample\n"
+print(sample + "apple")
